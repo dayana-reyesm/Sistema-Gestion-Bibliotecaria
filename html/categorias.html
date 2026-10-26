@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de categorías</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-logo">
+            <img src="../img/libro-candado.png" alt="Logo de la biblioteca">
+            <h1>Sistema de Gestión Bibliotecaria</h1>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Menú principal</h2>
+        
+<nav>
+    <ul>
+        <li><a href="menu.html">Inicio</a></li>
+        <li><a href="libros.html">Gestión de libros</a></li>
+        <li><a href="usuarios.html">Gestión de usuarios</a></li>
+        <li><a href="prestamos.html">Préstamos y devoluciones</a></li>
+        <li><a href="categorias.html">Gestión de categorías</a></li>
+        <li><a href="consultas.html">Consultas e informes</a></li>
+    </ul>
+</nav>
+
+    </aside>
+
+    <main>
+        <h2>Gestión de categorías</h2>
+        <p>Organiza las categorías utilizadas para clasificar los libros de la biblioteca.</p>
+
+        <section>
+            <h3>Información de la categoría</h3>
+
+            <form>
+                <label for="codigoCategoria">Código de la categoría</label>
+                <input type="text" id="codigoCategoria" name="codigoCategoria"
+                       placeholder="Ej. CAT-001">
+
+                <label for="nombreCategoria">Nombre de la categoría</label>
+                <input type="text" id="nombreCategoria" name="nombreCategoria"
+                       placeholder="Ingrese el nombre">
+
+                <label for="descripcionCategoria">Descripción</label>
+                <input type="text" id="descripcionCategoria" name="descripcionCategoria"
+                       placeholder="Describa la categoría">
+
+                <label for="estadoCategoria">Estado</label>
+                <select id="estadoCategoria" name="estadoCategoria">
+                    <option value="">Seleccione el estado</option>
+                    <option>Activa</option>
+                    <option>Inactiva</option>
+                </select>
+
+                <div class="acciones-formulario">
+                    <button type="button">Guardar categoría</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

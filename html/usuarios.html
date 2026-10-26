@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de usuarios</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-logo">
+            <img src="../img/libro-candado.png" alt="Logo de la biblioteca">
+            <h1>Sistema de Gestión Bibliotecaria</h1>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Menú principal</h2>
+        
+<nav>
+    <ul>
+        <li><a href="menu.html">Inicio</a></li>
+        <li><a href="libros.html">Gestión de libros</a></li>
+        <li><a href="usuarios.html">Gestión de usuarios</a></li>
+        <li><a href="prestamos.html">Préstamos y devoluciones</a></li>
+        <li><a href="categorias.html">Gestión de categorías</a></li>
+        <li><a href="consultas.html">Consultas e informes</a></li>
+    </ul>
+</nav>
+
+    </aside>
+
+    <main>
+        <h2>Gestión de usuarios</h2>
+        <p>Consulta y organiza la información de las personas registradas en la biblioteca.</p>
+
+        <section>
+            <h3>Información del usuario</h3>
+
+            <form>
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento"
+                       placeholder="Ingrese el documento">
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Ingrese el nombre completo">
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo"
+                       placeholder="usuario@ejemplo.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="Ingrese el teléfono">
+
+                <label for="tipoUsuario">Tipo de usuario</label>
+                <select id="tipoUsuario" name="tipoUsuario">
+                    <option value="">Seleccione el tipo</option>
+                    <option>Estudiante</option>
+                    <option>Docente</option>
+                    <option>Usuario externo</option>
+                </select>
+
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="">Seleccione el estado</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>
+                </select>
+
+                <div class="acciones-formulario">
+                    <button type="button">Guardar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

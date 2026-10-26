@@ -1,0 +1,222 @@
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #263445;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #dce3ec;
+}
+
+header h1 {
+    margin: 0;
+    color: #173b65;
+    font-size: 25px;
+}
+/* Logo y título del encabezado */
+.encabezado-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.encabezado-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.encabezado-logo h1 {
+    margin: 0;
+}
+/* Menú lateral */
+aside {
+    background-color: #173b65;
+    color: #ffffff;
+    width: 260px;
+    min-height: calc(100vh - 75px);
+    padding: 25px 15px;
+    float: left;
+}
+
+aside h2 {
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #285887;
+}
+
+/* Área principal */
+main {
+    margin-left: 260px;
+    padding: 35px;
+}
+
+main h2 {
+    color: #173b65;
+    margin-top: 0;
+}
+
+main p {
+    color: #5c6878;
+    line-height: 1.6;
+}
+
+
+/* Tarjetas del menú principal */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e0e6ee;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(23, 59, 101, 0.06);
+}
+
+.icono {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    color: #173b65;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 700px) {
+    aside {
+        float: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Formulario de gestión de libros */
+main section {
+    background-color: #ffffff;
+    border: 1px solid #e0e6ee;
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 25px;
+    max-width: 850px;
+    box-shadow: 0 3px 10px rgba(23, 59, 101, 0.06);
+}
+
+main section h3 {
+    color: #173b65;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+}
+
+main form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #263445;
+    align-self: end;
+}
+
+main form input,
+main form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.acciones-formulario {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.acciones-formulario button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: #173b65;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.acciones-formulario button:hover {
+    background-color: #285887;
+}
+
+.acciones-formulario button[type="reset"] {
+    background-color: #e7edf4;
+    color: #263445;
+}
+
+/* Adaptación del formulario a pantallas pequeñas */
+@media (max-width: 600px) {
+    main form {
+        grid-template-columns: 1fr;
+    }
+
+    .acciones-formulario {
+        grid-column: 1;
+    }
+}

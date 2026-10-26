@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas e informes</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-logo">
+            <img src="../img/libro-candado.png" alt="Logo de la biblioteca">
+            <h1>Sistema de Gestión Bibliotecaria</h1>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Menú principal</h2>
+        
+<nav>
+    <ul>
+        <li><a href="menu.html">Inicio</a></li>
+        <li><a href="libros.html">Gestión de libros</a></li>
+        <li><a href="usuarios.html">Gestión de usuarios</a></li>
+        <li><a href="prestamos.html">Préstamos y devoluciones</a></li>
+        <li><a href="categorias.html">Gestión de categorías</a></li>
+        <li><a href="consultas.html">Consultas e informes</a></li>
+    </ul>
+</nav>
+
+    </aside>
+
+    <main>
+        <h2>Consultas e informes</h2>
+        <p>Consulta información general sobre los libros, los usuarios y los préstamos de la biblioteca.</p>
+
+        <section>
+            <h3>Filtros de consulta</h3>
+
+            <form>
+                <label for="tipoConsulta">Tipo de consulta</label>
+                <select id="tipoConsulta" name="tipoConsulta">
+                    <option value="">Seleccione una consulta</option>
+                    <option>Listado de libros</option>
+                    <option>Listado de usuarios</option>
+                    <option>Préstamos activos</option>
+                    <option>Devoluciones pendientes</option>
+                </select>
+
+                <label for="fechaConsulta">Fecha de consulta</label>
+                <input type="date" id="fechaConsulta" name="fechaConsulta">
+
+                <label for="estadoConsulta">Estado</label>
+                <select id="estadoConsulta" name="estadoConsulta">
+                    <option value="">Todos los estados</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>
+                    <option>Pendiente</option>
+                    <option>Devuelto</option>
+                </select>
+
+                <label for="observaciones">Observaciones</label>
+                <input type="text" id="observaciones" name="observaciones"
+                       placeholder="Criterio adicional (opcional)">
+
+                <div class="acciones-formulario">
+                    <button type="button">Consultar</button>
+                    <button type="reset">Limpiar filtros</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h3>Resultado de la consulta</h3>
+            <p>Aquí se visualizará la información correspondiente a los filtros seleccionados.</p>
+            <p><strong>Nota:</strong> esta pantalla es una representación visual. No consulta datos reales ni genera informes.</p>
+        </section>
+    </main>
+
+</body>
+</html>

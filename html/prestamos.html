@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamos y devoluciones</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-logo">
+            <img src="../img/libro-candado.png" alt="Logo de la biblioteca">
+            <h1>Sistema de Gestión Bibliotecaria</h1>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Menú principal</h2>
+        
+<nav>
+    <ul>
+        <li><a href="menu.html">Inicio</a></li>
+        <li><a href="libros.html">Gestión de libros</a></li>
+        <li><a href="usuarios.html">Gestión de usuarios</a></li>
+        <li><a href="prestamos.html">Préstamos y devoluciones</a></li>
+        <li><a href="categorias.html">Gestión de categorías</a></li>
+        <li><a href="consultas.html">Consultas e informes</a></li>
+    </ul>
+</nav>
+
+    </aside>
+
+    <main>
+        <h2>Préstamos y devoluciones</h2>
+        <p>Consulta la información de los préstamos de libros y sus fechas de devolución.</p>
+
+        <section>
+            <h3>Información del préstamo</h3>
+
+            <form>
+                <label for="codigoPrestamo">Código del préstamo</label>
+                <input type="text" id="codigoPrestamo" name="codigoPrestamo"
+                       placeholder="Ej. PRE-001">
+
+                <label for="documentoUsuario">Documento del usuario</label>
+                <input type="text" id="documentoUsuario" name="documentoUsuario"
+                       placeholder="Ingrese el documento">
+
+                <label for="libroPrestamo">Título del libro</label>
+                <input type="text" id="libroPrestamo" name="libroPrestamo"
+                       placeholder="Ingrese el título del libro">
+
+                <label for="fechaPrestamo">Fecha del préstamo</label>
+                <input type="date" id="fechaPrestamo" name="fechaPrestamo">
+
+                <label for="fechaDevolucion">Fecha prevista de devolución</label>
+                <input type="date" id="fechaDevolucion" name="fechaDevolucion">
+
+                <label for="estadoPrestamo">Estado del préstamo</label>
+                <select id="estadoPrestamo" name="estadoPrestamo">
+                    <option value="">Seleccione el estado</option>
+                    <option>Prestado</option>
+                    <option>Devuelto</option>
+                    <option>Vencido</option>
+                </select>
+
+                <div class="acciones-formulario">
+                    <button type="button">Registrar préstamo</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

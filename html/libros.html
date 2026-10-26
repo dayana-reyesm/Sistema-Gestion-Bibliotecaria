@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de libros</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-logo">
+            <img src="../img/libro-candado.png" alt="Logo de la biblioteca">
+            <h1>Sistema de Gestión Bibliotecaria</h1>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Menú principal</h2>
+        
+<nav>
+    <ul>
+        <li><a href="menu.html">Inicio</a></li>
+        <li><a href="libros.html">Gestión de libros</a></li>
+        <li><a href="usuarios.html">Gestión de usuarios</a></li>
+        <li><a href="prestamos.html">Préstamos y devoluciones</a></li>
+        <li><a href="categorias.html">Gestión de categorías</a></li>
+        <li><a href="consultas.html">Consultas e informes</a></li>
+    </ul>
+</nav>
+
+    </aside>
+
+    <main>
+        <h2>Gestión de libros</h2>
+        <p>Consulta y registra visualmente la información de los libros de la biblioteca.</p>
+
+        <section>
+            <h3>Información del libro</h3>
+
+            <form>
+                <label for="codigo">Código del libro</label>
+                <input type="text" id="codigo" name="codigo"
+                       placeholder="Ej. LIB-001">
+
+                <label for="titulo">Título del libro</label>
+                <input type="text" id="titulo" name="titulo"
+                       placeholder="Ingrese el título">
+
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor"
+                       placeholder="Ingrese el nombre del autor">
+
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una categoría</option>
+                    <option>Literatura</option>
+                    <option>Ciencia</option>
+                    <option>Historia</option>
+                    <option>Tecnología</option>
+                </select>
+
+                <label for="cantidad">Cantidad de ejemplares</label>
+                <input type="number" id="cantidad" name="cantidad"
+                       min="0" placeholder="Ej. 5">
+
+                <div class="acciones-formulario">
+                    <button type="button">Guardar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
